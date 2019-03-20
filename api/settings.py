@@ -26,7 +26,7 @@ SECRET_KEY = 'bswgo+%@=bhw&&)@pk^j^e*=l^e7u(gdep7(8nomrm0y=h^&dd'
 DEBUG = True
 
 ALLOWED_HOSTS = ['ensembl.vishalpandey.xyz', 'http://ensembl.vishalpandey.xyz', 'https://ensembl.vishalpandey.xyz', 'http://localhost', 'localhost']
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -47,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'api.urls'
@@ -119,4 +121,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_ALLOW_ALL = True
+
