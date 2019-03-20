@@ -18,7 +18,7 @@ def index(request):
 	output = []
 	for x in data:
 		connector = '/'
-		if request.GET['path'] == '/' or request.GET['path'][-1]:
+		if request.GET['path'] == '/' or request.GET['path'][-1] == '/':
 			connector = ''
 		vdict = {}
 		if x[0] == '-':
