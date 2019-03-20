@@ -22,7 +22,7 @@ def index(request):
 			vdict['url'] = 'ftp://ftp.ensembl.org/pub/release-95'+str(request.GET['path'])+connector+str(x[56:])
 			vdict['type'] = 'file'
 		elif x[0] == 'd':
-			vdict['url'] = 'http://localhost:8000/?path='+str(request.GET['path'])+connector+str(x[56:])
+			vdict['url'] = 'https://ensembl.vishalpandey.xyz/?path='+str(request.GET['path'])+connector+str(x[56:])
 			vdict['type'] = 'dir'
 	  
 		vdict['size'] = int(x[28:42])
