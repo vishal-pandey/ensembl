@@ -1,0 +1,76 @@
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-color: lightgrey;
+}
+.content{
+	width: 100%;
+
+	min-height: 100vh;
+	height: auto;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+	/*padding: 15px;*/
+}
+.tracker{
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.content-card{
+	width: auto;
+	min-width: 150px;
+	max-width: 100%;
+	margin: 15px;
+	cursor: pointer;
+	overflow: auto;
+}
+.content-header-image-folder {
+  background-image: url('https://lh3.googleusercontent.com/lRUKBMe6NXaKbXifj6lL3IFml1gqgY8etG2ylMC5OoVVHllgAh-_NXVca182gvoXN4U');
+  background-size: cover;
+}
+
+.content-header-image-file {
+  background-image: url('http://www.clker.com/cliparts/V/k/G/v/Z/3/new-file-simple-hi.png');
+  background-size: 50% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.files-content{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+.content-name{
+	word-wrap: break-word;
+}
+.date-modified-content{
+	color: grey;
+}
+
+.files-meta{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.files-meta div{
+	padding: 5px;
+	/*height: 20px;*/
+	background-color: lightgrey;
+	text-align: right;
+}
