@@ -25,7 +25,7 @@ SECRET_KEY = 'bswgo+%@=bhw&&)@pk^j^e*=l^e7u(gdep7(8nomrm0y=h^&dd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ensembl.vishalpandey.xyz']
 
 
 # Application definition
